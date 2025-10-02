@@ -1,0 +1,40 @@
+name: "🐛 General Bug Report"
+description: "Report a general bug or unwanted behavior affecting any part of the project."
+title: "[BUG] Short summary of the problem"
+labels: ["bug", "triage"]
+assignees:
+  - Dmustache
+
+body:
+  - type: markdown
+    attributes:
+      value: "Thanks for reporting a bug! Please provide as much detail as possible so we can fix it quickly."
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: "Clear Problem Summary"
+      description: "A clear and concise description of what is going wrong."
+      placeholder: "When I try to send a 'GameLog' message, it doesn't appear on the recipient's side."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: "Steps to Reproduce"
+      description: "Step-by-step instructions so we can replicate the issue."
+      placeholder: |
+        1. Run Client A and Client B.
+        2. On Client A, perform action X.
+        3. Observe unexpected behavior Y.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-result
+    attributes:
+      label: "Expected Result"
+      description: "What should have happened instead?"
+    validations:
+      required: true

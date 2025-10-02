@@ -1,0 +1,29 @@
+name: "✨ General Feature Request / Idea"
+description: "Suggest a new feature, enhancement, or architectural change."
+title: "[FEATURE] Name of the proposed feature"
+labels: ["enhancement", "idea"]
+assignees:
+  - Dmustache
+
+body:
+  - type: markdown
+    attributes:
+      value: "Great ideas help our project grow! Please describe your suggestion in detail."
+
+  - type: textarea
+    id: proposal-summary
+    attributes:
+      label: "Proposal Summary"
+      description: "A short, clear summary of what you are proposing."
+      placeholder: "I propose adding support for 'Live Location Sharing' as a new Custom Event."
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem-solved
+    attributes:
+      label: "Problem Solved or Value Added"
+      description: "Explain why this feature is needed and the benefit it brings to users or the project."
+      placeholder: "This will improve convenience for users coordinating meetings and showcase the flexibility of our 'Custom Events' system."
+    validations:
+      required: true
